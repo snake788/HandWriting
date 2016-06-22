@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OptionsSliderTableViewCell" rowHeight="60" id="KGk-i7-Jjw" customClass="OptionsSliderTableViewCell" customModule="HandWriting" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CELL_OPTION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5T-f7-hi1">
+                        <rect key="frame" x="15" y="9" width="141" height="20"/>
+                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgL-qr-CN4">
+                        <rect key="frame" x="15" y="28" width="141" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="QDW-TW-wwy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XQ-IQ-0Gb">
+                        <rect key="frame" x="270" y="38" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="Cn3-80-cOa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="10"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiV-6Q-Mj9">
+                        <rect key="frame" x="162" y="15" width="145" height="31"/>
+                        <color key="tintColor" red="1" green="0.27058823529999998" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="thumbTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="sliderTouched:" destination="KGk-i7-Jjw" eventType="valueChanged" id="mQ0-z7-12V"/>
+                        </connections>
+                    </slider>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZb-t7-Luy">
+                        <rect key="frame" x="164" y="38" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="3ua-du-q2B"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="10"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YiV-6Q-Mj9" firstAttribute="leading" secondItem="y5T-f7-hi1" secondAttribute="trailing" constant="8" symbolic="YES" id="0AO-Or-8Cb"/>
+                    <constraint firstItem="y5T-f7-hi1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="2Qq-nV-XMk"/>
+                    <constraint firstItem="y5T-f7-hi1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="T9n-e9-Ivb"/>
+                    <constraint firstItem="AZb-t7-Luy" firstAttribute="firstBaseline" secondItem="8XQ-IQ-0Gb" secondAttribute="firstBaseline" id="Uuq-1m-Amy"/>
+                    <constraint firstItem="YiV-6Q-Mj9" firstAttribute="leading" secondItem="CgL-qr-CN4" secondAttribute="trailing" constant="8" symbolic="YES" id="V7n-08-JpU"/>
+                    <constraint firstItem="CgL-qr-CN4" firstAttribute="top" secondItem="y5T-f7-hi1" secondAttribute="bottom" constant="-1" id="W6y-3m-V7x"/>
+                    <constraint firstAttribute="bottom" secondItem="AZb-t7-Luy" secondAttribute="bottom" id="XLg-eD-0bk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="YiV-6Q-Mj9" secondAttribute="trailing" constant="7" id="Z3r-HO-FRD"/>
+                    <constraint firstItem="YiV-6Q-Mj9" firstAttribute="leading" secondItem="AZb-t7-Luy" secondAttribute="leading" id="ba4-SN-vhS"/>
+                    <constraint firstItem="AZb-t7-Luy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="30" id="dfx-RH-vUb"/>
+                    <constraint firstItem="8XQ-IQ-0Gb" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="lI4-TB-bRI"/>
+                    <constraint firstItem="AZb-t7-Luy" firstAttribute="baseline" secondItem="8XQ-IQ-0Gb" secondAttribute="baseline" id="mkV-YR-WCQ"/>
+                    <constraint firstItem="YiV-6Q-Mj9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nQG-Ox-Nb0"/>
+                    <constraint firstItem="y5T-f7-hi1" firstAttribute="leading" secondItem="CgL-qr-CN4" secondAttribute="leading" id="ut8-r4-7qU"/>
+                    <constraint firstItem="8XQ-IQ-0Gb" firstAttribute="leading" secondItem="AZb-t7-Luy" secondAttribute="trailing" constant="64" id="vrt-xG-dLI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelMaxValue" destination="8XQ-IQ-0Gb" id="BFf-NF-04p"/>
+                <outlet property="labelMinValue" destination="AZb-t7-Luy" id="isX-XQ-mx9"/>
+                <outlet property="labelOption" destination="y5T-f7-hi1" id="kyx-C9-pnn"/>
+                <outlet property="labelValue" destination="CgL-qr-CN4" id="Tq8-kU-sCc"/>
+                <outlet property="slider" destination="YiV-6Q-Mj9" id="KFE-h8-0u7"/>
+            </connections>
+            <point key="canvasLocation" x="531" y="516"/>
+        </tableViewCell>
+    </objects>
+</document>

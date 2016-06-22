@@ -1,0 +1,39 @@
+/* 
+  Localizable.strings
+  HandWriting
+
+  Created by Aurélien WOLFERT on 19/06/2016.
+  Copyright © 2016 snake788. All rights reserved.
+*/
+
+"WALKTHROUGH_LABEL_WELCOME" = "Bienvenue dans\nHandWriting !";
+"WALKTHROUGH_BUTTON_CONTINUE" = "Continuer";
+
+"CELL_FONT_SELECTION_NEATNESS" = "Soin";
+"CELL_FONT_SELECTION_CURSIVITY" = "Cursivité";
+"CELL_FONT_SELECTION_EMBELLISHMENT" = "Frioritures";
+"CELL_FONT_SELECTION_CHARACTER_WIDTH" = "Epaisseur";
+
+"CELL_OPTIONS_HANDWRITING_SIZE" = "Taille";
+"CELL_OPTIONS_HANDWRITING_COLOR" = "Couleur";
+"CELL_OPTIONS_WIDTH" = "Largeur";
+"CELL_OPTIONS_HEIGHT" = "Hauteur";
+"CELL_OPTIONS_LINE_SPACING" = "Espace de ligne";
+
+"CELL_OPTIONS_SELECT_COLOR" = "Sélectionner une couleur";
+
+"SWIFT_SPINNER_LOADING_HANDWRITINGS" = "Récupération des polices...";
+"SWIFT_SPINNER_LOADING_RENDER" = "Génération en cours...";
+
+"SEGMENTED_CONTROL_SEGMENT_TITLE" = "Titre";
+"SEGMENTED_CONTROL_SEGMENT_NEATNESS" = "Soin";
+"SEGMENTED_CONTROL_SEGMENT_WIDTH" = "Epaisseur";
+
+"NEW_HANDWRITING_VC_TITLE" = "Polices";
+
+"OPTIONS_TVC_TITLE" = "Options";
+"OPTIONS_TVC_TABLE_VIEW_HEADER" = "Police choisie : ";
+"COLOR_PICKER_TITLE" = "Choisir une couleur";
+
+"CORE_DATA_HAS_ADD_HANDWRITING" = "L'image a été sauvegardée dans votre collection d'écriture.";
+"TEXT_VIEW_MUST_HAVE_LENGTH" = "Le texte doit possédé au moins un caractère.";
